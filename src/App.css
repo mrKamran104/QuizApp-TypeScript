@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  /* width: auto; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  user-select: none;
+  text-align: center;
+}
+
+.start {
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(-45deg, white, brown, lightgray, orange, green, pink, yellow);
+  background-size: 700% 700%;
+  animation: gradient 7s ease infinite;
+  background-attachment: fixed;
+  padding-bottom: 90px;
+  font-size: 22px;
+  padding: 20px 100px;
+  border: none;
+  /* background-color: white; */
+  border-radius: 100px;
+  /* color: tomato; */
+  /* transition: 0.4 all; */
+}
+
+.button:focus {
+  outline: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.quiz {
+  min-width: 455px;
+  max-width: 850px;
+  margin: auto;
+  background-color: gainsboro;
+}
+
+.quiz_header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.quiz_body {
+  padding: 20px;
+}
+
+.quiz_user {
+  display: flex;
+  align-self: center;
+  padding-left: 30px;
+}
+
+.option {
+  /* background-color: white; */
+  width: 300px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  border-radius: 100px;
+  border: 2px solid transparent;
+}
+
+.option:hover:enabled {
+  cursor: pointer;
+  border: 2px solid goldenrod;
+  outline: none;
+}
+
+.btn-next {
+  margin-top: 15px;
+  width: 25%;
+  font-size: 22px;
+  padding: 10px 0px;
+  border: none;
+  /* background-color: white; */
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+
+.btn-next:hover {
+  cursor: pointer;
+}
+
+.btn-next:focus {
+  outline: none;
+}
+
+/* @media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  } */
