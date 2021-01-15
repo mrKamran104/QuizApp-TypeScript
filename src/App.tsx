@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import QuesCard from './components/QuesCard';
 import { Difficulty, fetchQuizQues } from './services/quiz_service';
 import { Quiz } from './Types/quiz_types';
 import './App.css'
+import configNotification from './firebase';
 
 const Total_Ques = 5
 
@@ -21,6 +22,10 @@ function App() {
   const [userAnswer, setUserAnswer] = useState<AnswerObject[]>([])
   const [score, setScore] = useState(0)
   const [gameOver, setGameOver] = useState(true)
+
+  useEffect(() => {
+    configNotification()
+  }, [])
 
   const startQuiz = async () => {
     setLoading(true)
